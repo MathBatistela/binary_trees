@@ -5,7 +5,7 @@ using namespace std;
 
 BSTNode::BSTNode()
 {
-    //ctor
+    //construtor
     {
         left = NULL;
         right = NULL;
@@ -15,7 +15,7 @@ BSTNode::BSTNode()
 
 BSTNode::BSTNode(int d)
 {
-    //ctor
+    //construtor
     {
         data = d;
         left = NULL;
@@ -26,7 +26,7 @@ BSTNode::BSTNode(int d)
 
 BSTNode::~BSTNode()
 {
-    //dtor
+    //destructor
 }
 
 int BSTNode::getData()

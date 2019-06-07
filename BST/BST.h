@@ -31,4 +31,12 @@ class BST
 
 };
 
+class AVL : public BST
+{
+    public:
+        AVL();
+        virtual ~AVL();
+        
+};
+
 #endif // BST_H

@@ -5,13 +5,13 @@ using namespace std;
 
 BST::BST()
 {
-    //ctor
+    //construtor
     root = NULL;
 }
 
 BST::~BST()
 {
-    //dtor
+    //destructor
 }
 
 bool BST::isEmpty()
