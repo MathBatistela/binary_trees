@@ -12,6 +12,8 @@ class BSTNode
         virtual ~BSTNode();
 
         int getData();
+        int getHeight();
+        void setHeight(int);
         void setData(int);
         BSTNode* getLeft();
         BSTNode* getRight();
@@ -23,6 +25,7 @@ class BSTNode
     private:
         BSTNode *left, *right;
         int data;
+        int height;
 };
 
 #endif // BSTNODE_H

@@ -2,13 +2,36 @@
 #define BST_H
 #include "BSTNode.h"
 
-class BST
+class Tree
+{
+    public:      
+    virtual bool isEmpty() = 0;
+	virtual int height() = 0;
+	virtual int qtNodes() = 0;
+	virtual void inserir (int valor) = 0;
+	virtual void preOrder() = 0;
+    virtual void posOrder() = 0;
+    virtual void inOrder() = 0;
+
+    protected:
+
+    private:
+
+    virtual int height(BSTNode*) = 0;
+    virtual int qtNodes(BSTNode*) = 0;
+    virtual BSTNode* inserir(BSTNode*, int) = 0;
+    virtual void preOrder(BSTNode *no) = 0;
+    virtual void posOrder(BSTNode *no) = 0;
+    virtual void inOrder(BSTNode *no) = 0;
+
+};
+
+class BST : public Tree
 {
     public:
         BST();
         virtual ~BST();
 
-    BSTNode* getRoot();
     bool isEmpty();
 	int height();
 	int qtNodes();
@@ -31,7 +54,7 @@ class BST
 
 };
 
-class AVL : public BST
+class AVL : public Tree
 {
     public:
         AVL();

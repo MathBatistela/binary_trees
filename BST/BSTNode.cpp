@@ -20,6 +20,7 @@ BSTNode::BSTNode(int d)
         data = d;
         left = NULL;
         right = NULL;
+        height = 0;
     }
 
 }
@@ -29,10 +30,21 @@ BSTNode::~BSTNode()
     //destructor
 }
 
+int BSTNode::getHeight()
+{
+    return height;
+}
+
+void BSTNode::setHeight(int h)
+{
+    height = h;
+}
+
 int BSTNode::getData()
 {
     return data;
 }
+
 
 void BSTNode::setData(int d)
 {
